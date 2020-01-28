@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NotesApp.MainPage"
+             Title="Quick Notes"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="themes_icon"
+                     Clicked="ThemePicker_Clicked">
+            
+        </ToolbarItem>
+
+
+
+    </ContentPage.ToolbarItems>
+    <!-- To create the relative layout -->
+    <StackLayout>
+        <StackLayout>
+            <!-- To create a search bar-->
+            <SearchBar x:Name="SearchingBar"
+                   Placeholder="Search items"
+                   CancelButtonColor="Red"
+                   
+                   FontAttributes="Italic">
+
+            </SearchBar>
+            
+        </StackLayout>
+        
+            
+                <ListView ItemsSource ="{Binding InformationDetails}" x:Name="InformationDetailsListView"
+                         SelectedItem="SelectedListViewItem" SelectionMode="Single">
+
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+                        <ViewCell>
+                            
+                                
+                                
+                                <Label 
+                                    Style="{StaticResource MediumLabelStyle}"
+                                   Text="{Binding Name}"
+                                   FontAttributes="Bold" 
+                                    />
+                                
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+            
+    
+
+                </ListView>
+           
+        
+        
+           
+    </StackLayout>
+
+</ContentPage>

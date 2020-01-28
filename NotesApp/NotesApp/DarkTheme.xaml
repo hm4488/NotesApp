@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="NotesApp.DarkTheme">
+    <Color x:Key="SearchBarColor">White</Color>
+    <Color x:Key="PageBackgroundColor">Black</Color>
+    <Color x:Key="NavigationBarColor">Teal</Color>
+    <Color x:Key="PrimaryColor">Teal</Color>
+    <Color x:Key="SecondaryColor">White</Color>
+    <Color x:Key="PrimaryTextColor">White</Color>
+    <Color x:Key="SecondaryTextColor">White</Color>
+    <Color x:Key="TertiaryTextColor">WhiteSmoke</Color>
+    <Color x:Key="TransparentColor">Transparent</Color>
+    <Color x:Key="SeparatorLineColor">Teal</Color>
+    <Color x:Key="SearchBarBackgroundColor">Teal</Color>
+    <Color x:Key="ButtonBackgroundColor">Teal</Color>
+    <Color x:Key="ListViewSelectedBackgroundColor">Teal</Color>
+    <Color x:Key="EditorTextColor">Black</Color>
+
+</ResourceDictionary>

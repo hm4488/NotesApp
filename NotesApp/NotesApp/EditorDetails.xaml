@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NotesApp.EditorDetails"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Editor x:Name="NameEditor"  Placeholder="Enter the Name"
+                Text="{Binding Name}"
+                  Style =  "{DynamicResource EditorTextColor}"
+                HeightRequest="100" />
+            <Editor x:Name="DetailsEditor" Placeholder="Enter the Details"
+                Text="{Binding Details}"
+                     Style =  "{DynamicResource EditorTextColor}"
+                HeightRequest="100" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Save" 
+                    Clicked="SaveButton_Clicked" />
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
